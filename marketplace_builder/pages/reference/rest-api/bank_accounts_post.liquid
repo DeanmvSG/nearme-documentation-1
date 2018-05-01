@@ -1,4 +1,5 @@
 ---
+converter: markdown
 metadata_title: Create a Bank Account
 slug: reference/rest-api/bank_accounts_post
 ---
@@ -18,11 +19,11 @@ POST /api/user/bank_accounts
 
 **Bank Account Parameters**
 
-{% include resources/BankAccountForm.html %}
+{% include 'resources/BankAccountForm' %}
 
 **Example request**
 
-{% include reference/request_headers.md %}
+{% include 'reference/request_headers' %}
 
 ```json
 {
@@ -42,13 +43,13 @@ POST /api/user/bank_accounts
 
 **Example response**
 
-{% include reference/response_headers.md %}
+{% include 'reference/response_headers' %}
 
-{% include reference/response_post_body.md %}
+{% include 'reference/response_post_body' %}
 
 | Element                             | Type                                       | Description                                                    |
 | ----------------------------------- | ------------------------------------------ | -------------------------------------------------------------- |
 | [Element as it appears in response] | [Array, Object, String, Integer, or Float] | [Brief description of what information the element represents] |
 | […]                                 | […]                                        | […]                                                            |
 
-{% include reference/error_and_status_codes_post.md %}
+{% include 'reference/error_and_status_codes_post' %}
