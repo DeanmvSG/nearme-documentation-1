@@ -2,7 +2,7 @@
 converter: markdown
 metadata:
   title: Metadata
-  description: Metadata is a property to store any kind of key-value pairs. A page can be extended using metadata. 
+  description: Metadata is a property to store any kind of key-value pairs. A page can be extended using metadata.
 slug: get-started/pages/metadata
 searchable: true
 ---
@@ -64,6 +64,9 @@ query find_page(
   pages: pages(
     metadata: $metadata
     page: $page
+    filter: {
+
+    }
     per_page: $per_page
     exclude: $exclude
     has_key: $has_key
